@@ -48,7 +48,6 @@ public class PlayerDAOImpl implements PlayerDAO {
 				return ErrorCode.SUCCESS;
 			} catch (SQLException e) {
 				logger.error(e.getMessage());
-				System.out.println(e.getMessage());
 				return ErrorCode.DATABASE_ERROR;
 			}
 		} else {
