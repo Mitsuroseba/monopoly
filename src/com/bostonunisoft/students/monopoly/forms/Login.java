@@ -28,29 +28,29 @@ public class Login {
 		GridLayout gridLayout = new GridLayout(2,true);
 				
 		Group group = new Group(shell, SWT.RIGHT);
-		group.setText("что то важное");
+		group.setText("пїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ");
 		group.setSize(150,100);
 		
 		Group groupLogin = new Group(shell, SWT.RIGHT);
-		groupLogin.setText("Вход/Регистрация");
+		groupLogin.setText("пїЅпїЅпїЅпїЅ/пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ");
 		groupLogin.setLayout(gridLayout);
 		groupLogin.setSize(150, 100);
 		
 		Label label = new Label(groupLogin, SWT.NONE);
-		label.setText("Введите email: ");
+		label.setText("пїЅпїЅпїЅпїЅпїЅпїЅпїЅ email: ");
 		Text textEmail = new Text (groupLogin, SWT.BORDER);
 		
 		Label labe2 = new Label(groupLogin, SWT.NONE);
-		labe2.setText("Введите password: ");
+		labe2.setText("пїЅпїЅпїЅпїЅпїЅпїЅпїЅ password: ");
 		Text textPassword = new Text (groupLogin, SWT.BORDER);
 		
 				
 		Button buttonOk = new Button(groupLogin, SWT.CENTER);
-		buttonOk.setText("  Войти  ");
+		buttonOk.setText("  пїЅпїЅпїЅпїЅпїЅ  ");
 		buttonOk.addSelectionListener(new LoginListener());
 		
 		Button buttonCancel = new Button(groupLogin, SWT.NONE);        
-		buttonCancel.setText("Регистрация");
+		buttonCancel.setText("пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ");
 		buttonCancel.addSelectionListener(new RegisterListener());
 		
 		shell.setDefaultButton (buttonCancel);
@@ -100,9 +100,9 @@ public class Login {
 	}
 	
 
-	/*public static void main(String[] args) {
+	public static void main(String[] args) {
 		Login simpleGUI = new Login();
 		simpleGUI.start();
 		
-	}*/
+	}
 }
